@@ -30,7 +30,7 @@ function Home() {
                        <NavLink to={`/Individual/${item.id}`} style={{textDecoration:"none",color:"black"}}>
                        <h4 style={{marginTop:"-60px", marginLeft:"20px", color:"white"}} className='mqstyle'>{item.heading}</h4>
                        </NavLink>
-                       <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-10px",marginLeft:"20px"}}>{item.category}</h5>
+                       <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-15px",marginLeft:"20px"}}>{item.category}</h5>
                     </>
                    )
                  }) }
@@ -41,11 +41,11 @@ function Home() {
               {data.filter((e)=>e.id===36).map((item,index)=>{
                   return(
                     <>
-                    <img src={item.Image} alt='not found' style={{height:"210px" ,width:"100%" }} />
+                    <img src={item.Image} alt='not found'id="imageset" />
                     <NavLink to={`/Individual/${item.id}`} style={{textDecoration:"none",color:"black"}}>
               <h4 style={{marginTop:"-60px", marginLeft:"20px",color:"white"}}>{item.heading}</h4>
               </NavLink>
-              <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-10px",marginLeft:"20px"}}>{item.category}</h5>
+              <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-15px",marginLeft:"20px"}}>{item.category}</h5>
                     </>
                   )
                 }) }
@@ -55,11 +55,11 @@ function Home() {
               {data.filter((e)=>e.id===39).map((item,index)=>{
                   return(
                     <>
-                    <img src={item.Image} alt='not found'  style={{height:"210px",width:"100%",marginTop:"17px"}} />
+                    <img src={item.Image} alt='not found' id='imageset' />
                     <NavLink to={`/Individual/${item.id}`} style={{textDecoration:"none",color:"black"}}>
-              <h4 style={{marginTop:"-60px", marginLeft:"20px",color:"white"}}>{item.heading}</h4>
+              <h4 style={{marginTop:"-65px", marginLeft:"20px",color:"white"}}>{item.heading}</h4>
               </NavLink>
-              <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-10px",marginLeft:"20px"}}>{item.category}</h5>
+              <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-15px",marginLeft:"20px"}}>{item.category}</h5>
                     </>
                   )
                 }) }
@@ -212,7 +212,7 @@ function Home() {
                 <NavLink to={`/Individual/${item.id}`} style={{textDecoration:"none",color:"black"}}>
                 <h4 className='mqstyle'>{item.heading}</h4></NavLink>
                 <h5 className='mqstyle' style={{fontWeight:"bold"}}>{item.category}</h5>
-                </div>
+                </div> 
                 </div>
                 </> 
                )
