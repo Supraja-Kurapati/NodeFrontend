@@ -350,9 +350,26 @@ padding: 20px;
   margin: auto auto;
   width: 90vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
  }
+ .ParentBackandhome{
+  margin: auto auto;
+  width: 90vw;
+  height:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+ }
+#Imgbackbtn{
+  height: 30px;
+  width: 30px;
+}
+#backbtnimg{
+height: 30px;
+width: 30px;
+}
 
  .clapsandshareparent{
   grid-column: 1/2;
@@ -551,6 +568,9 @@ font-size: 15px;
 .individualparent{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
+}
+.ParentBackandhome{
+padding: 0px 20px;
 }
 .clapsandshareparent {
   display: none;

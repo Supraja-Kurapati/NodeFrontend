@@ -30,6 +30,7 @@ const [data]=useContext(Store)
          </div>
 
          <div className='individualdata'>
+            
             {ContextData.filter((data)=>data.id===parseInt(individualId)).map((item,index)=>{
              return(
             <div key={index}>
@@ -46,7 +47,7 @@ const [data]=useContext(Store)
                 <div className='socialmediaicons'>
                   <div><img src='https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png' alt='Not found' id='socialmedia'/> </div>
 
-                  <div><img src='https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png' alt='Not found' id='socialmedia'/> </div> 
+                  <div><img src='https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png' alt='Not found' id='socialmedia' /> </div> 
 
                   <div><img src='https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png' alt='Not found' id='socialmedia'/> </div> 
 
@@ -55,7 +56,7 @@ const [data]=useContext(Store)
 
            </div>
 
-            <img src={item.Image} alt="not Found" id='mqimg'/>
+            <img src={item.Image} alt="not Found" id='mqimg' style={{height:"20vw",width:"100%"}}/>
             <p id='mqdescription'>{item.description}</p>                
             </div>
             )
