@@ -15,7 +15,9 @@ body{
   font-family: sans-serif;
   overflow: hidden;
 }
-
+.Load{
+  display: none;
+}
 #navmobclose{
   height: 20px;
   width: 20px;
@@ -821,7 +823,7 @@ margin-bottom: 5px;
 
 }
 
-@media screen and (min-width:501px) and (max-width:768px) {
+@media screen and (min-width:501px) and (max-width:1024px) {
   /* Individual Page */
   #sirenpostsimg{
     height: 200px;
