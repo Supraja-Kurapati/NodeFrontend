@@ -56,7 +56,7 @@ const [data]=useContext(Store)
 
            </div>
 
-            <img src={item.Image} alt="not Found" id='mqimg' className='mob' style={{height:"20vw",width:"100%"}}/>
+            <img src={item.Image} alt="not Found" id='mqimg'  style={{height:"40vw",width:"100%"}}/>
             <p id='mqdescription'>{item.description}</p>                
             </div>
             )
