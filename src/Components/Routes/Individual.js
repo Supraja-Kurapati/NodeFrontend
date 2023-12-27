@@ -56,7 +56,7 @@ const [data]=useContext(Store)
 
            </div>
 
-            <img src={item.Image} alt="not Found" id='mqimg' style={{height:"20vw",width:"100%"}}/>
+            <img src={item.Image} alt="not Found" id='mqimg' className='mob' style={{height:"20vw",width:"100%"}}/>
             <p id='mqdescription'>{item.description}</p>                
             </div>
             )
@@ -101,7 +101,7 @@ const [data]=useContext(Store)
 
                 <div className='ProfileParent mqprofile'>
               <div className='Profile'>
-                <img src={profile}alt='Not found'/> 
+                <img src={profile}alt='Not found' id='Mqtabletimg'/> 
                 <div className='ProfileName' >
                  <p style={{color:"grey"}}> Written By</p>
                   <p id='profilenameName'>Supraja</p> <p id='profilenameread'>23/12/23  .5 mins read</p>

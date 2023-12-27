@@ -43,9 +43,9 @@ function Home() {
                     <>
                     <img src={item.Image} alt='not found'id="imageset" />
                     <NavLink to={`/Individual/${item.id}`} style={{textDecoration:"none",color:"black"}}>
-              <h4 style={{marginTop:"-60px", marginLeft:"20px",color:"white"}}>{item.heading}</h4>
+              <h4 style={{marginTop:"-60px", marginLeft:"20px",color:"white"}} id='mqtablettext'>{item.heading}</h4>
               </NavLink>
-              <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-15px",marginLeft:"20px"}}>{item.category}</h5>
+              <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-15px",marginLeft:"20px"}}id='mqtablettext'>{item.category}</h5>
                     </>
                   )
                 }) }
@@ -57,9 +57,9 @@ function Home() {
                     <>
                     <img src={item.Image} alt='not found' id='imageset' />
                     <NavLink to={`/Individual/${item.id}`} style={{textDecoration:"none",color:"black"}}>
-              <h4 style={{marginTop:"-65px", marginLeft:"20px",color:"white"}}>{item.heading}</h4>
+              <h4 style={{marginTop:"-65px", marginLeft:"20px",color:"white"}}id='mqtablettext'>{item.heading}</h4>
               </NavLink>
-              <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-15px",marginLeft:"20px"}}>{item.category}</h5>
+              <h5 style={{fontWeight:"bold",color:"white" ,marginTop:"-15px",marginLeft:"20px"}}id='mqtablettext'>{item.category}</h5>
                     </>
                   )
                 }) }
@@ -94,9 +94,7 @@ function Home() {
           })}
           </div>
          </div>
-      
-
-
+<hr/>
          <div className='topposts' style={{display:"block"}}>  
                <h3>Latest Articles</h3> <hr style={hrred}/>
          </div> 
@@ -135,7 +133,7 @@ function Home() {
                    <div className='homesmalldata'>
                    <NavLink to={`/Individual/${item.id}`} style=   {{textDecoration:"none",color:"black"}}>
                    <h4>{item.heading}</h4>
-                   <p>{item.description.slice(0,200)}</p>
+                   <p id='mqtabdes'>{item.description.slice(0,200)}</p>
                    </NavLink>
                    <h5 style={{fontWeight:"bold"}}>{item.category}</h5><hr/>
                   </div> 
@@ -196,7 +194,7 @@ function Home() {
             </div> 
             <div className='homedataright'>
               <NavLink to={`/Individual/${item.id}`} style={{textDecoration:"none",color:"black"}}>
-              <h3>{item.heading}</h3>
+              <h3 id='mqtablettext'>{item.heading}</h3>
               </NavLink>
               <h5 style={{fontWeight:"bold"}}>{item.category}</h5>
             </div> <br/><hr/>

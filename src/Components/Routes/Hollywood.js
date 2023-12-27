@@ -89,6 +89,7 @@ function Hollywood() {
            <div className='Advertisementparent'>
             <div className='Advertisement'>
               <img src='https://i.pinimg.com/564x/44/69/c7/4469c769cb0d648dedccabe24d6fab8e.jpg' alt='Not Found' id='ads'/>
+            
             </div>
            </div>
          </div> 
